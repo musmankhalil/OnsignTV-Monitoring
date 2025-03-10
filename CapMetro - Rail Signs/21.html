@@ -1,0 +1,69 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Extracted Textareas - Part 21</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+                width: 100vw;
+                height: 100vh;
+                padding: 10px;
+                overflow: hidden;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 10px;
+                width: 100%;
+                height: 100%;
+            }
+            .iframe-cell {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: #fff;
+                border-radius: 4px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                padding: 10px;
+                font-size: 14px;
+            }
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+            @media screen and (max-width: 1200px) {
+                .grid-container {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .grid-container {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(5, 1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="iframe-cell"><iframe  src="https://app.onsign.tv/embed/Qvc7OxFCO0Hfy6i8aX3OeEKKan19dT"></iframe></div>
+        </div>
+    </body>
+    </html>
+    
